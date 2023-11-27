@@ -40,6 +40,8 @@ $ yarn run start
 
 # watch mode
 $ yarn run start:dev
+# watch mode 个人增加2023年11月27日22:09:09
+$ yarn start  
 
 # production mode
 $ yarn run start:prod
