@@ -5,10 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+
 </head>
 
 <body>
   21323123
 </body>
+<script>
+  const ulParam = async () => {
+    const res = await axios.get("/api/person/1")
+    console.log('ulParam', res)
+  }
+
+  const query = async () => {
+    const res = await axios.get("/api/person/find", {
+      params: {
+        name: 'zyt',
+        age: 12
+      }
+    })
+    console.log('query', res)
+  }
+  query()
+  ulParam()
+</script>
 
 </html>
